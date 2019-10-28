@@ -7,9 +7,9 @@ public class Main {
 
 	public static void main(String[] args) throws Exception{
 		
-			URL oracle = new URL("http://www.oracle.com/index.html");
+			String pagetest = "page1.html";
 			
-		    BufferedReader in = new BufferedReader( new InputStreamReader(oracle.openStream()) );
+		    BufferedReader in = new BufferedReader( new FileReader(pagetest) );
 
 		    String inputLine;
 		    while ((inputLine = in.readLine()) != null)
